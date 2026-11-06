@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- وسوم المعاينة والمشاركة الجذابة للواتساب ومواقع التواصل -->
+  <title>كشف حقيقة مشاعره تجاهك! هل يحبك بصدق أم مجرد تعود؟ 💔🔍</title>
+  <meta name="title" content="كشف حقيقة مشاعره تجاهك! هل يحبك بصدق أم مجرد تعود؟ 💔🔍" />
+  <meta name="description" content="ادخل واكتشف نسبة توافقه واهتمامه بك بالذكاء العاطفي.. نصائح سرية وتحليل دقيق لتصرفاته معك 🔥" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="كشف حقيقة مشاعره تجاهك! هل يحبك بصدق أم مجرد تعود؟ 💔🔍" />
+  <meta property="og:description" content="ادخل واكتشف نسبة توافقه واهتمامه بك بالذكاء العاطفي.. نصائح سرية وتحليل دقيق لتصرفاته معك 🔥" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="كشف حقيقة مشاعره تجاهك! هل يحبك بصدق أم مجرد تعود؟ 💔🔍" />
+  <meta name="twitter:description" content="ادخل واكتشف نسبة توافقه واهتمامه بك بالذكاء العاطفي.. نصائح سرية وتحليل دقيق لتصرفاته معك 🔥" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #ff2a6d;
+      --secondary: #9b1fe8;
+      --bg-dark: #0f051d;
+      --card-bg: rgba(255, 255, 255, 0.06);
+      --border-color: rgba(255, 255, 255, 0.14);
+      --text-muted: #cbbad9;
+      --dynamic-color: #ff2a6d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Tajawal', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: radial-gradient(circle at top center, #240b36 0%, #0c0217 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 14px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .bg-heart {
+      position: absolute;
+      color: rgba(255, 64, 129, 0.18);
+      font-size: 22px;
+      animation: floatUp 8s infinite linear;
+      user-select: none;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(105vh) scale(0.6); opacity: 0; }
+      50% { opacity: 0.75; }
+      100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
+
+    #celebrationOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 9999;
+      overflow: hidden;
+    }
+
+    .confetti-heart {
+      position: absolute;
+      top: -40px;
+      user-select: none;
+      animation: fallDown linear forwards;
+    }
+
+    @keyframes fallDown {
+      0% { transform: translateY(0) rotate(0deg) scale(0.8); opacity: 1; }
+      80% { opacity: 1; }
+      100% { transform: translateY(105vh) rotate(360deg) scale(1.3); opacity: 0; }
+    }
+
+    .custom-toast {
+      position: fixed;
+      top: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-100px);
+      background: rgba(30, 10, 40, 0.94);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1.5px solid rgba(255, 42, 109, 0.6);
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: 18px;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 42, 109, 0.3);
+      z-index: 10000;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      opacity: 0;
+      pointer-events: none;
+      text-align: center;
+    }
+
+    .custom-toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 480px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border-color);
+      border-radius: 28px;
+      padding: 34px 22px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      position: relative;
+      z-index: 10;
+      margin: auto;
+      animation: pageEntrance 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes pageEntrance {
+      from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      background: rgba(255, 42, 109, 0.18);
+      border: 1px solid rgba(255, 42, 109, 0.35);
+      border-radius: 30px;
+      color: #ff9cb3;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      animation: pulseGlow 2s infinite alternate;
+    }
+
+    @keyframes pulseGlow {
+      from { box-shadow: 0 0 5px rgba(255, 42, 109, 0.2); }
+      to { box-shadow: 0 0 16px rgba(255, 42, 109, 0.6); }
+    }
+
+    h1 {
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+
+    p.subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+      line-height: 1.5;
+    }
+
+    .input-field {
+      text-align: right;
+      margin-bottom: 16px;
+    }
+
+    .input-field label {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #eddcf8;
+      margin-bottom: 8px;
+    }
+
+    .input-field input, .input-field textarea {
+      width: 100%;
+      padding: 15px 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1.5px solid rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .input-field input:focus, .input-field textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 16px rgba(255, 42, 109, 0.4);
+      background: rgba(255, 255, 255, 0.13);
+    }
+
+    .behavior-toggle-btn {
+      width: 100%;
+      padding: 15px 18px;
+      background: linear-gradient(135deg, rgba(255, 42, 109, 0.22), rgba(155, 31, 232, 0.28));
+      border: 2px solid rgba(255, 75, 130, 0.6);
+      border-radius: 18px;
+      color: #ffffff;
+      font-size: 14.5px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 18px 0 16px 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 24px rgba(255, 42, 109, 0.28);
+      animation: alertPulse 2.2s infinite ease-in-out;
+    }
+
+    @keyframes alertPulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 8px 24px rgba(255, 42, 109, 0.28); }
+      50% { transform: scale(1.02); box-shadow: 0 12px 30px rgba(255, 42, 109, 0.55); border-color: #ff2a6d; }
+    }
+
+    .behavior-btn-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: right;
+    }
+
+    .behavior-badge {
+      background: #ff2a6d;
+      color: #fff;
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 8px;
+      font-weight: 900;
+    }
+
+    #behaviorSection {
+      display: none;
+      text-align: right;
+      margin-bottom: 18px;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .multi-hint {
+      font-size: 12.5px;
+      color: #ff9cb3;
+      margin-bottom: 9px;
+      display: block;
+    }
+
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .option-chip {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 13px 16px;
+      border-radius: 14px;
+      cursor: pointer;
+      font-size: 13.5px;
+      color: #e3d2f3;
+      transition: 0.25s;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      user-select: none;
+    }
+
+    .option-chip:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .option-chip.active {
+      background: linear-gradient(90deg, rgba(255, 42, 109, 0.32), rgba(155, 31, 232, 0.32));
+      border-color: var(--primary);
+      color: #fff;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(255, 42, 109, 0.25);
+    }
+
+    .option-chip span.icon {
+      font-size: 18px;
+    }
+
+    #customBehaviorField {
+      display: none;
+      margin-top: 10px;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .char-counter {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: left;
+      margin-top: 4px;
+    }
+
+    .btn-main {
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(90deg, #ff2a6d, #9b1fe8);
+      border: none;
+      border-radius: 18px;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 12px 28px rgba(255, 42, 109, 0.4);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .btn-main:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 36px rgba(255, 42, 109, 0.6);
+    }
+
+    .loading-box {
+      display: none;
+      margin-top: 24px;
+    }
+
+    .loading-magic {
+      font-size: 46px;
+      animation: beat 0.65s infinite alternate;
+      display: inline-block;
+    }
+
+    @keyframes beat {
+      to { transform: scale(1.35) rotate(5deg); }
+    }
+
+    .loading-text {
+      font-size: 15px;
+      color: #dfcbf7;
+      margin-top: 14px;
+      font-weight: 600;
+    }
+
+    .result-box {
+      display: none;
+      margin-top: 10px;
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .names-display-card {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 10px 22px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 50px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .name-pill {
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .heart-divider {
+      font-size: 20px;
+      animation: heartBeat 1.2s infinite ease-in-out;
+      display: inline-block;
+    }
+
+    @keyframes heartBeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+
+    .percentage-circle {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: conic-gradient(var(--dynamic-color) var(--deg, 0deg), rgba(255, 255, 255, 0.08) 0deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px auto;
+      box-shadow: 0 0 25px var(--dynamic-glow, rgba(255, 42, 109, 0.45));
+      transition: box-shadow 0.5s ease;
+    }
+
+    .percentage-inner {
+      width: 114px;
+      height: 114px;
+      background: #14031d;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: 900;
+      color: var(--dynamic-color);
+      transition: color 0.5s ease;
+    }
+
+    .phrase-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .phrase-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .advice-section {
+      text-align: right;
+      margin-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 20px;
+    }
+
+    .advice-header {
+      font-size: 15px;
+      font-weight: 800;
+      color: #ff9cb3;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .advice-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-right: 4px solid var(--dynamic-color);
+      border-radius: 14px;
+      padding: 13px 15px;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .advice-icon {
+      font-size: 22px;
+      line-height: 1;
+      margin-top: 2px;
+    }
+
+    .advice-content h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 3px;
+    }
+
+    .advice-content p {
+      font-size: 13px;
+      color: #cbbed8;
+      line-height: 1.5;
+    }
+
+    .btn-retry {
+      width: 100%;
+      padding: 14px;
+      background: transparent;
+      border: 1.5px solid rgba(255, 255, 255, 0.25);
+      border-radius: 16px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+
+    .btn-retry:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: #fff;
+    }
+
+    iframe[name*="netlify"],
+    iframe[src*="netlify"],
+    netlify-drawer,
+    [data-netlify-drawer],
+    div[class*="netlify"],
+    a[href*="netlify.com"],
+    div:has(> a[href*="netlify.com"]) {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      position: fixed !important;
+      top: -9999px !important;
+      left: -9999px !important;
+      width: 0px !important;
+      height: 0px !important;
+      z-index: -99999 !important;
+      transform: scale(0) !important;
+      clip-path: inset(100%) !important;
+      clip: rect(1px, 1px, 1px, 1px) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="toast" class="custom-toast">
+    <span id="toastIcon">⚠️</span>
+    <span id="toastMsg">رسالة التنبيه</span>
+  </div>
+
+  <div id="celebrationOverlay"></div>
+  <div id="heartsContainer"></div>
+
+  <div class="wrapper" id="mainWrapper">
+    <div class="top-badge">👑 هل هو شريك حياتك وفارس أحلامك الحقيقي؟</div>
+    <h1>مقياس الحب ومستوى الاهتمام</h1>
+    <p class="subtitle">حلل كيمياء الحروف وتصرفاته معك؛ هل يحبك بصدق أم مجرد تعود؟</p>
+
+    <!-- نموذج الإدخال -->
+    <div id="formSection">
+      <div class="input-field">
+        <label for="name1">الاسم الأول (اسمك):</label>
+        <input type="text" id="name1" placeholder="أدخل اسمك هنا..." autocomplete="off">
+      </div>
+
+      <div class="input-field">
+        <label for="name2">الاسم الثاني (اسم الشريك):</label>
+        <input type="text" id="name2" placeholder="أدخل اسم الطرف الآخر..." autocomplete="off" oninput="handlePartnerNameInput()">
+      </div>
+
+      <button type="button" class="behavior-toggle-btn" id="behaviorToggle" onclick="toggleBehaviorView()">
+        <div class="behavior-btn-content">
+          <span style="font-size: 20px;">🔥</span>
+          <span>كيف يتصرف معك؟ (اكتشف نيته الحقيقية)</span>
+        </div>
+        <span class="behavior-badge" id="badgeLabel">مهم جداً ⚡</span>
+      </button>
+
+      <div id="behaviorSection">
+        <label style="display:block; font-size:13.5px; font-weight:700; color:#eddcf8; margin-bottom:4px;">
+          اختر أبرز تصرفاته معك:
+        </label>
+        <span class="multi-hint">💡 اختر تصرفاً واحداً على الأقل (أو أكثر) لإتمام التحليل بدقة</span>
+
+        <div class="options-grid">
+          <div class="option-chip" data-type="care_daily" onclick="toggleBehaviorItem(this)">
+            <span class="icon">💬</span>
+            <span>يسأل عن حالي بدون مناسبة ويهتم بيومي</span>
+          </div>
+          <div class="option-chip" data-type="jokes_details" onclick="toggleBehaviorItem(this)">
+            <span class="icon">✨</span>
+            <span>يمازحني دائماً ويركز بأدق تفاصيلي وصريح معي</span>
+          </div>
+          <div class="option-chip" data-type="cares_upset" onclick="toggleBehaviorItem(this)">
+            <span class="icon">🥺</span>
+            <span>يهتم لزعلي جداً ويسارع لترضيتي ولا ينام وزعل بيننا</span>
+          </div>
+          <div class="option-chip" data-type="cold_busy" onclick="toggleBehaviorItem(this)">
+            <span class="icon">⏳</span>
+            <span>مشغول دائماً، قليل المبادرة وردوده متأخرة</span>
+          </div>
+          <div class="option-chip" data-type="ghosting" onclick="toggleBehaviorItem(this)">
+            <span class="icon">🌪️</span>
+            <span>يظهر باهتمام مفرط وفجأة يختفي أياماً بدون سبب</span>
+          </div>
+          <div class="option-chip" data-type="custom" onclick="toggleBehaviorItem(this)">
+            <span class="icon">✍️</span>
+            <span>أريد كتابة تصرفه معي بالتحديد...</span>
+          </div>
+        </div>
+
+        <div id="customBehaviorField" class="input-field">
+          <textarea id="customBehaviorInput" rows="2" maxlength="120" placeholder="اكتب تصرفه بصدق بما لا يتجاوز 120 حرفاً..." oninput="updateCharCount()"></textarea>
+          <div class="char-counter" id="charCounter">0 / 120 حرفاً</div>
+        </div>
+      </div>
+
+      <button class="btn-main" onclick="startAnalysis()">
+        <span>تحليل المشاعر والنتيجة</span>
+        <span>✨</span>
+      </button>
+    </div>
+
+    <!-- شاشة التحميل -->
+    <div class="loading-box" id="loadingBox">
+      <div class="loading-magic">🔮</div>
+      <div class="loading-text" id="loadingMsg">جاري قراءة كيمياء الحروف وتناغم الأسماء...</div>
+    </div>
+
+    <!-- شاشة النتائج والنصائح -->
+    <div class="result-box" id="resultBox">
+      <div class="names-display-card">
+        <span class="name-pill" id="displayName1"></span>
+        <span class="heart-divider">💖</span>
+        <span class="name-pill" id="displayName2"></span>
+      </div>
+
+      <div class="percentage-circle" id="circleProgress">
+        <div class="percentage-inner" id="percentageVal">0%</div>
+      </div>
+
+      <div class="phrase-title" id="phraseTitle"></div>
+      <div class="phrase-desc" id="phraseDesc"></div>
+
+      <div class="advice-section">
+        <div class="advice-header">💡 خطتك ونصائح خاصة بك لجذبه وإشعال اهتمامه:</div>
+        <div id="adviceCardsContainer"></div>
+      </div>
+
+      <button class="btn-retry" onclick="resetAll()">فحص أسماء أخرى 🔄</button>
+    </div>
+  </div>
+
+  <!-- Firebase Modular SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDtoc92dOGDLy9fxrT06aGLxFn9UWde7bk",
+      authDomain: "lovecalc-3fb43.firebaseapp.com",
+      projectId: "lovecalc-3fb43",
+      storageBucket: "lovecalc-3fb43.firebasestorage.app",
+      messagingSenderId: "533242865398",
+      appId: "1:533242865398:web:47a7d875224cd42100aed7",
+      measurementId: "G-336ZMGCKR8"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    window.saveToFirestore = async function(first, second, behaviorText, percent) {
+      try {
+        await addDoc(collection(db, "love_entries"), {
+          firstName: first,
+          secondName: second,
+          behavior: behaviorText,
+          percentage: percent,
+          createdAt: serverTimestamp()
+        });
+      } catch (err) {
+        console.error("Firestore Save Error:", err);
+      }
+    };
+  </script>
+
+  <script>
+    // قلوب الخلفية العادية
+    const bgIcons = ['❤️', '💖', '💘', '💕'];
+    const container = document.getElementById('heartsContainer');
+    for (let i = 0; i < 15; i++) {
+      const el = document.createElement('div');
+      el.className = 'bg-heart';
+      el.textContent = bgIcons[Math.floor(Math.random() * bgIcons.length)];
+      el.style.left = Math.random() * 95 + 'vw';
+      el.style.animationDuration = (5 + Math.random() * 6) + 's';
+      el.style.animationDelay = (Math.random() * 5) + 's';
+      container.appendChild(el);
+    }
+
+    function showToast(message, icon = "⚠️") {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').innerText = message;
+      document.getElementById('toastIcon').innerText = icon;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 4000);
+    }
+
+    function triggerCelebrationOverlay() {
+      const overlay = document.getElementById('celebrationOverlay');
+      overlay.innerHTML = '';
+      const items = ['🌸', '🌹', '💖', '💐', '❤️', '✨', '🌺', '💕'];
+      for (let i = 0; i < 50; i++) {
+        const item = document.createElement('div');
+        item.className = 'confetti-heart';
+        item.innerText = items[Math.floor(Math.random() * items.length)];
+        item.style.left = Math.random() * 100 + 'vw';
+        item.style.fontSize = (20 + Math.random() * 24) + 'px';
+        item.style.animationDuration = (2.2 + Math.random() * 2.8) + 's';
+        item.style.animationDelay = (Math.random() * 1.5) + 's';
+        overlay.appendChild(item);
+      }
+      setTimeout(() => { overlay.innerHTML = ''; }, 5500);
+    }
+
+    // فتح قائمة التصرفات تلقائياً عند كتابة اسم الشريك
+    let autoOpened = false;
+    function handlePartnerNameInput() {
+      const val = document.getElementById('name2').value.trim();
+      const sec = document.getElementById('behaviorSection');
+      const badge = document.getElementById('badgeLabel');
+
+      if (val.length >= 2 && !autoOpened && sec.style.display !== 'block') {
+        sec.style.display = 'block';
+        badge.innerText = 'إخفاء ▲';
+        autoOpened = true;
+        sec.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    function toggleBehaviorView() {
+      const sec = document.getElementById('behaviorSection');
+      const badge = document.getElementById('badgeLabel');
+      if (sec.style.display === 'block') {
+        sec.style.display = 'none';
+        badge.innerText = 'مهم جداً ⚡';
+      } else {
+        sec.style.display = 'block';
+        badge.innerText = 'إخفاء ▲';
+      }
+    }
+
+    function toggleBehaviorItem(elem) {
+      elem.classList.toggle('active');
+      const customBox = document.getElementById('customBehaviorField');
+      
+      const customChip = document.querySelector('.option-chip[data-type="custom"]');
+      if (customChip && customChip.classList.contains('active')) {
+        customBox.style.display = 'block';
+      } else {
+        customBox.style.display = 'none';
+      }
+    }
+
+    function updateCharCount() {
+      const len = document.getElementById('customBehaviorInput').value.length;
+      const counter = document.getElementById('charCounter');
+      counter.innerText = `${len} / 120 حرفاً`;
+      if (len >= 115) {
+        counter.style.color = '#ff4b72';
+      } else {
+        counter.style.color = 'var(--text-muted)';
+      }
+    }
+
+    function computeScore(name1, name2, selectedTypes) {
+      const combined = (name1 + name2).trim().toLowerCase();
+      let hash = 0;
+      for (let i = 0; i < combined.length; i++) {
+        hash = combined.charCodeAt(i) + ((hash << 5) - hash);
+      }
+      
+      let base = 75 + Math.abs(hash % 20);
+
+      if (selectedTypes.length > 0) {
+        let modifier = 0;
+        selectedTypes.forEach(t => {
+          if (t === 'care_daily') modifier += 10;
+          if (t === 'jokes_details') modifier += 8;
+          if (t === 'cares_upset') modifier += 9;
+          if (t === 'cold_busy') modifier -= 22;
+          if (t === 'ghosting') modifier -= 32;
+          if (t === 'custom') modifier += 2;
+        });
+
+        base = base + modifier;
+      }
+
+      if (base > 99) base = 99;
+      if (base < 18) base = 18;
+      return base;
+    }
+
+    function getColorTheme(score) {
+      if (score >= 90) {
+        return { color: '#ff2a6d', glow: 'rgba(255, 42, 109, 0.55)' };
+      } else if (score >= 75) {
+        return { color: '#c04cf6', glow: 'rgba(192, 76, 246, 0.55)' };
+      } else if (score >= 50) {
+        return { color: '#f59e0b', glow: 'rgba(245, 158, 11, 0.5)' };
+      } else {
+        return { color: '#64748b', glow: 'rgba(100, 116, 139, 0.4)' };
+      }
+    }
+
+    function getAnalysisAndAdvices(score, name1, name2) {
+      if (score >= 88) {
+        return {
+          title: "تناغم قلبي واهتمام استثنائي! 💍💖",
+          desc: `هناك شعلة اهتمام وتوافق روحي عالي جداً بين (${name1}) و (${name2}). الأفعال والمشاعر في أفضل حالاتها.`,
+          advices: [
+            {
+              icon: "👀",
+              title: "لغة العيون وعدم إنزال البصر:",
+              desc: "في كل مرة تلتقي عيونكما، لا تنزل بصرك عنه سريعاً! حدق في عينيه بابتسامة هادئة لثوانٍ؛ النظرات المستمرة تصنع شحنة جاذبية خارقة ولا تُنسى."
+            },
+            {
+              icon: "🏷️",
+              title: "ناده باسم أو دلع خاص بك أنت فقط:",
+              desc: "اختر له اسماً أو لقباً لطيفاً لا يناديه به أحد غيرك. هذا يجعلك مميزاً ومختلفاً عن جميع الناس في عقله الباطن."
+            },
+            {
+              icon: "🗣️",
+              title: "صارحه أو بيّن له مشاعرك بجرأة:",
+              desc: "الأرضية مهيأة تماماً! لا تتردد في التعبير عن امتنانك لوجوده وممازحته باستمرار، فالمشاعر متبادلة بقوة."
+            }
+          ]
+        };
+      } else if (score >= 68) {
+        return {
+          title: "توافق جميل ومشاعر تحتاج للمبادرة! 🌸✨",
+          desc: `المشاعر موجودة وبدايتها طيبة جداً، ولكن العلاقة تحتاج إلى كسر الروتين وزيادة جرعة الاهتمام اليومي.`,
+          advices: [
+            {
+              icon: "☀️",
+              title: "السؤال اليومي بدون أي مناسبة:",
+              desc: "عوّده على رسالة صباحية أو سؤال عفوي في منتصف اليوم: 'كيف كان يومك؟'. الاهتمام اليومي البسيط يصنع تعلقاً كبيراً مع الوقت."
+            },
+            {
+              icon: "😂",
+              title: "الممازحة وخلق الضحك المستمر:",
+              desc: "كن الشخص الذي يلجأ إليه عندما يثقل عليه اليوم؛ شاركه نكتة أو موقفاً طريفاً لتكون مصدر راحته وملاذه اللطيف."
+            },
+            {
+              icon: "👀",
+              title: "التلميح بنظرات الاهتمام:",
+              desc: "إذا كنتم معاً، اجعل عينيك تبحث عنه بين الحين والآخر واجعل نظرتك تعبّر عن اهتمام حقيقي بما يقوله ويفعله."
+            }
+          ]
+        };
+      } else {
+        return {
+          title: "مؤشر اهتمام ضعيف وعلاقة أحادية! ⏳💔",
+          desc: `التصرفات والمؤشرات تدل على أن مستوى الاهتمام لا يلبي التوقعات، وهناك طرف يبذل مجهوداً أكبر من الآخر.`,
+          advices: [
+            {
+              icon: "✋",
+              title: "توقف عن الركض والسؤال المستمر:",
+              desc: "الاهتمام لا يُطلب؛ خفف مبادرتك وابتعد خطوة إلى الخلف. إذا كان يهتم حقاً فسيلاحظ غيابك ويبادر هو بالسؤال."
+            },
+            {
+              icon: "💎",
+              title: "ركز على نفسك وقيمتك أولاً:",
+              desc: "لا تجعل مزاجك وسعادتك معلقة برد أو تصرف بارد. صحتك النفسية وقيمتك فوق أي شخص."
+            },
+            {
+              icon: "🎯",
+              title: "الصراحة ووضع النقاط على الحروف:",
+              desc: "إذا كنت تريد الاستمرار، واجهه بتصرفاته بلطف ووضوح، لتحدد إن كان هناك مستقبل حقيقي أم مجرد استنزاف لمشاعرك."
+            }
+          ]
+        };
+      }
+    }
+
+    function startAnalysis() {
+      const n1 = document.getElementById('name1').value.trim();
+      const n2 = document.getElementById('name2').value.trim();
+
+      if (!n1 || !n2) {
+        showToast("لطفاً، اكتب اسمك واسم الطرف الآخر أولاً للمتابعة! 💌", "⚠️");
+        return;
+      }
+
+      const activeChips = document.querySelectorAll('.option-chip.active');
+
+      // التحقق الصارم من تحديد خيار واحد على الأقل
+      if (activeChips.length === 0) {
+        const sec = document.getElementById('behaviorSection');
+        sec.style.display = 'block';
+        document.getElementById('badgeLabel').innerText = 'إخفاء ▲';
+        showToast("لطفاً، حدد تصرفاً واحداً على الأقل لتحليل النسبة والمشاعر بشكل أدق! 🎯", "🔥");
+        sec.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      const selectedTypes = [];
+      const selectedLabels = [];
+
+      activeChips.forEach(chip => {
+        const type = chip.getAttribute('data-type');
+        selectedTypes.push(type);
+        if (type !== 'custom') {
+          selectedLabels.push(chip.innerText.trim());
+        }
+      });
+
+      if (selectedTypes.includes('custom')) {
+        const customTxt = document.getElementById('customBehaviorInput').value.trim();
+        if (customTxt.length < 5) {
+          showToast("يرجى كتابة تصرفه بما لا يقل عن 5 أحرف ليكتمل التحليل!", "✍️");
+          return;
+        }
+        selectedLabels.push(`تصرف مخصص: ${customTxt}`);
+      }
+
+      const behaviorFinal = selectedLabels.length > 0 ? selectedLabels.join(' | ') : 'لم يتم تحديد تصرفات';
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      document.getElementById('formSection').style.display = 'none';
+      const loadingBox = document.getElementById('loadingBox');
+      loadingBox.style.display = 'block';
+
+      const loadingMsg = document.getElementById('loadingMsg');
+      setTimeout(() => loadingMsg.innerText = "مطابقة الحروف وقياس الذبذبات العاطفية...", 700);
+      setTimeout(() => loadingMsg.innerText = "تحليل سلوكيات الشريك وتأثيرها على التوافق...", 1500);
+      setTimeout(() => loadingMsg.innerText = "تجهيز النصائح والنسبة النهائية...", 2300);
+
+      const score = computeScore(n1, n2, selectedTypes);
+
+      if (window.saveToFirestore) {
+        window.saveToFirestore(n1, n2, behaviorFinal, score);
+      }
+
+      setTimeout(() => {
+        loadingBox.style.display = 'none';
+        showResults(score, n1, n2);
+      }, 3000);
+    }
+
+    function showResults(targetScore, n1, n2) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      const resultBox = document.getElementById('resultBox');
+      const valEl = document.getElementById('percentageVal');
+      const circle = document.getElementById('circleProgress');
+      const data = getAnalysisAndAdvices(targetScore, n1, n2);
+      const theme = getColorTheme(targetScore);
+
+      document.documentElement.style.setProperty('--dynamic-color', theme.color);
+      document.documentElement.style.setProperty('--dynamic-glow', theme.glow);
+
+      document.getElementById('displayName1').innerText = n1;
+      document.getElementById('displayName2').innerText = n2;
+
+      document.getElementById('phraseTitle').innerText = data.title;
+      document.getElementById('phraseDesc').innerText = data.desc;
+
+      const cardsBox = document.getElementById('adviceCardsContainer');
+      cardsBox.innerHTML = '';
+      data.advices.forEach(adv => {
+        const card = document.createElement('div');
+        card.className = 'advice-card';
+        card.innerHTML = `
+          <div class="advice-icon">${adv.icon}</div>
+          <div class="advice-content">
+            <h4>${adv.title}</h4>
+            <p>${adv.desc}</p>
+          </div>
+        `;
+        cardsBox.appendChild(card);
+      });
+
+      resultBox.style.display = 'block';
+
+      triggerCelebrationOverlay();
+
+      let current = 0;
+      const step = targetScore > 0 ? Math.floor(1800 / targetScore) : 20;
+      const timer = setInterval(() => {
+        current += 1;
+        valEl.innerText = current + '%';
+        const deg = (current / 100) * 360;
+        circle.style.setProperty('--deg', deg + 'deg');
+
+        if (current >= targetScore) {
+          clearInterval(timer);
+        }
+      }, Math.max(step, 14));
+    }
+
+    function resetAll() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.getElementById('resultBox').style.display = 'none';
+      document.getElementById('name1').value = '';
+      document.getElementById('name2').value = '';
+      document.getElementById('customBehaviorInput').value = '';
+      document.getElementById('customBehaviorField').style.display = 'none';
+      document.getElementById('behaviorSection').style.display = 'none';
+      document.getElementById('badgeLabel').innerText = 'مهم جداً ⚡';
+      document.querySelectorAll('.option-chip').forEach(el => el.classList.remove('active'));
+      document.getElementById('charCounter').innerText = '0 / 120 حرفاً';
+      autoOpened = false;
+      document.getElementById('formSection').style.display = 'block';
+    }
+
+    function cleanNetlify() {
+      document.querySelectorAll('netlify-drawer, [data-netlify-drawer], a[href*="netlify.com"]').forEach(el => {
+        const container = el.closest('div');
+        if (container && container !== document.body && container !== document.getElementById('mainWrapper')) {
+          container.remove();
+        } else {
+          el.remove();
+        }
+      });
+    }
+
+    cleanNetlify();
+    document.addEventListener('DOMContentLoaded', cleanNetlify);
+    window.addEventListener('load', cleanNetlify);
+    
+    const netlifyWatcher = new MutationObserver(cleanNetlify);
+    netlifyWatcher.observe(document.documentElement, { childList: true, subtree: true });
+  </script>
+</body>
+</html>
